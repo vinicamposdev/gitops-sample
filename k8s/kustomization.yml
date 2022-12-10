@@ -7,5 +7,5 @@ resources:
 
 images:
 - name: goserver
-  newName: vinicamposdev/gitops-sample
-  newTag: sha
+  newName: vinicamposdev/gitopsfc
+  newTag: 5ac780985b23fa79343141e0e5fc32f4714c7e5f

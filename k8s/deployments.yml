@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: goserver
+spec:
+  selector:
+    matchLabels:
+      app: goserver
+  template:
+    metadata:
+      labels:
+        app: goserver
+    spec:
+      containers:
+      - name: goserver
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        image: goserver
+        ports:
+        - containerPort: 8080
